@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component
 class ValidateRegulation: DataState(DataStatus.VERIFY_REGULARIZATION) {
     override fun getNextStatus(action: DataAction, data: DataUpdate): DataStatus {
         return when (action) {
-            is Regularization -> {
+            is com.example.state.machine.demo.action.Regularization -> {
                 //Comando ou estratégia para executar
                 DataStatus.REGULARIZATION
             }

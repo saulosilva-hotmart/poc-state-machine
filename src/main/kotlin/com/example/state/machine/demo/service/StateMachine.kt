@@ -14,7 +14,11 @@ class StateMachine (private val states: List<DataState>){
 
         data.status = nextStatus
 
-        //Sava repository
+        //Salva repository
+
+
+        //
+
     }
 
     private fun stateFor(status: DataStatus) = states.single { it.dataStatus == status }

@@ -18,8 +18,8 @@ class DemoApplication(): CommandLineRunner {
 			ValidateBureau(),
 			ValidateRegulation(),
 			Reprocess(),
+			PendingData()
 		)
-
 
 		val stateMachine = StateMachine(list)
 		val dataService = DataService(stateMachine)
